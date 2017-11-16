@@ -15,7 +15,7 @@
 
         git clone https://github.com/philipszdavido/loopback-app-on-google-cloud-app-engine.git
 
-1.  Choose a sample:
+1.  Move into the `loopback-app-on-google-cloud-app-engine` directory from the terminal:
 
         cd loopback-app-on-google-cloud-app-engine
 
