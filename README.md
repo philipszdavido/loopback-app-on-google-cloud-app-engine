@@ -2,8 +2,6 @@
 
 * [Run Locally](#run-locally)
 * [Deploying](#deploying)
-* [Official samples](#official-samples)
-* [Community samples](#community-samples)
 
 ## Run Locally
 
@@ -37,7 +35,7 @@
 
         yarn start
 
-1.  Visit the application at [http://localhost:8080][].
+1.  Visit the application at `http://localhost:8080`.
 
 ## Deploying
 
