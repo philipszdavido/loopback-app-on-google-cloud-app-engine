@@ -50,7 +50,7 @@
     Note: If there is a `yarn.lock` file then `yarn install` will be used during
     deployment. Delete the `yarn.lock` file to fall back to `npm install`.
 
-1.  View your deployed application at `https://YOUR_PROJECT_ID.appspot.com`.
+1.  View your deployed application at `https://YOUR_PROJECT_ID.appspot.com` or `gcloud app browse`.
 
 [nodejs]: https://nodejs.org/
 [appengine]: https://cloud.google.com/appengine/docs/flexible/nodejs/
