@@ -24,7 +24,7 @@ app.use(jwtCheck);
 
 
 // apply to a path
-app.use('/api/artists', function(req, res, next) {
+app.use('/api/artist', function(req, res, next) {
     res.json("It has valid token", req.user);
 });
 

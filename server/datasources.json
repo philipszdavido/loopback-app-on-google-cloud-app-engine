@@ -1,6 +1,10 @@
 {
-  "db": {
-    "name": "db",
-    "connector": "memory"
-  }
+    "db": {
+        "name": "db",
+        "connector": "memory"
+    },
+    "mongodb": {
+        "url": "mongodb://alc:alc@ds237855.mlab.com:37855/alc",
+        "connector": "mongodb"
+    }
 }

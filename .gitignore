@@ -1,3 +1,4 @@
+server/boot/auto-migration.js
 *.csv
 *.dat
 *.iml
@@ -17,3 +18,4 @@
 coverage
 node_modules
 npm-debug.log
+cpy

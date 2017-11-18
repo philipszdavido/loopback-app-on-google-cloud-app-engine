@@ -3,6 +3,11 @@
 * [Run Locally](#run-locally)
 * [Deploying](#deploying)
 
+## Run this repo hosted on Google App Engine
+
+1. Open Postman.
+1. 
+
 ## Run Locally
 
 1.  [Setup your environment for Node.js developement][nodejs_dev].
