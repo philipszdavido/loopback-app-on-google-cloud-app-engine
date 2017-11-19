@@ -1,11 +1,39 @@
 # Loopback app on Google App Engine
+This repo demonstrates how to run and host a loopback app on Google App Engine.
 
 * [Run Locally](#run-locally)
 * [Deploying](#deploying)
 
 ## Run the hosted app on Google App Engine
-* I modelled the Spotify api. Spotify is an online music service that gives you instant access to millions of songs – from old favorites to the latest hits.*
+* I modelled the Spotify api. Spotify is an online music service that gives you instant access to millions of songs – from old favorites to the latest hits.
 
+* To test the APIs, use Postman.
+
+I created three models for this demo `Albums`, `Tracks` and `Artists`.
+
+* Albums Model Structure
+```sh
+    "artists": [{}],
+    "album_type": "",
+    "image": "",
+    "tracks": [{}],
+    "release_date": ""
+```
+* Tracks Model Structure
+```sh
+        "artists": [{}],
+        "albums": [{}],
+        "duration": "",
+        "image": "",
+        "name": ""
+```
+* Artists Model Structure
+```sh
+    "name": "",
+    "popularity": "",
+    "genres": [{}],
+    "image": ""
+```
 ## API Summary
 
 #### Note
@@ -42,8 +70,6 @@ GET /artists/<id> | Returns the specified artist id.
 PUT /artists/<id> | Update artist attributes.
 DELETE /artists/<id> | Delete artist.
 
-1. Open Postman.
-1. 
 
 ## Run Locally
 
