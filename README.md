@@ -5,6 +5,9 @@ I modelled the Spotify Web API. Spotify is an online music service that gives yo
 
 * [Run Locally](#run-locally)
 * [Deploying](#deploying)
+* [Web API Object Model](#Web-API-Object-Model)
+* [Run the hosted app on Google App Engine](#Run the hosted app on Google App Engine)
+* [API Summary](#api-summary)
 
 ## Web API Object Model
 I created three models for this demo `Albums`, `Tracks` and `Artists`.
