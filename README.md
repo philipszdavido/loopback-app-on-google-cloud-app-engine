@@ -40,7 +40,7 @@ I created three models for this demo `Albums`, `Tracks` and `Artists`.
 * To test the APIs, use Postman.
 
 ### Albums POST Test - This creates a new album
-![Alt text](albums_get_id.png "Title")
+![Alt text](screenshots/albums_get_id.png "Title")
 ### Albums GET Test - This retrieves all albums from the database
 
 ### Albums GET <id> Test - This retrieves a specific album id from the database 
