@@ -1,12 +1,12 @@
 # Loopback app on Google App Engine
 This repo demonstrates how to run and host a loopback app on Google App Engine.
 
+* I modelled the Spotify Web API. Spotify is an online music service that gives you instant access to millions of songs – from old favorites to the latest hits.
+
 * [Run Locally](#run-locally)
 * [Deploying](#deploying)
 
 ## Web API Object Model
-A full list of the objects returned by the endpoints of the Spotify Web API.
-
 I created three models for this demo `Albums`, `Tracks` and `Artists`.
 
 * Albums Model Structure
@@ -33,8 +33,6 @@ I created three models for this demo `Albums`, `Tracks` and `Artists`.
     "image": ""
 ```
 ## Run the hosted app on Google App Engine
-* I modelled the Spotify api. Spotify is an online music service that gives you instant access to millions of songs – from old favorites to the latest hits.
-
 * Note: I used mlab's Cloud MongoDB service as my datastore.
 
 * To test the APIs, use Postman.
@@ -48,17 +46,18 @@ I created three models for this demo `Albums`, `Tracks` and `Artists`.
 
 
 ### Tracks POST Test - This creates a new track instance.
-
+![Alt text](screenshots/tracks_get_id.png "Title")
 ### Tracks GET Test - This retrieves all tracks from the database.
-
+![Alt text](screenshots/tracks_get_id.png "Title")
 ### Tracks GET <id> Test - This retrieves a specific track id from the database.
-
+![Alt text](screenshots/tracks_get_id.png "Title")
 
 ### Artists POST Test - This creates a new artist instance.
-
+![Alt text](screenshots/artists_get_id.png "Title")
 ### Artists GET Test - This retrieves all artists from the database.
-
+![Alt text](screenshots/artists_get_id.png "Title")
 ### Artists GET <id> Test - This retrieves a specific artist id from the database 
+![Alt text](screenshots/artists_get_id.png "Title")
 
 ## API Summary
 
