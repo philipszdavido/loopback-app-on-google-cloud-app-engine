@@ -3,7 +3,33 @@
 * [Run Locally](#run-locally)
 * [Deploying](#deploying)
 
-## Run this repo hosted on Google App Engine
+## Run the hosted app on Google App Engine
+* I modelled the Spotify api. Spotify is an online music service that gives you instant access to millions of songs – from old favorites to the latest hits.*
+
+## API Summary
+
+#### Note
+
+All requests must be suffixed with  **loopback-app.appspot.com/api/**
+For full API documentation, visit [our docs](https://docmanager-docs.herokuapp.com/)
+
+## Albums
+
+EndPoint | Functionality
+-------- | -------------
+POST /users/login | Logs in a user.
+
+## Tracks
+
+EndPoint | Functionality
+-------- | -------------
+POST /users/login | Logs in a user.
+
+## Artists
+
+EndPoint | Functionality
+-------- | -------------
+POST /users/login | Logs in a user.
 
 1. Open Postman.
 1. 
