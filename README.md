@@ -14,16 +14,24 @@ I created three models for this demo `Albums`, `Tracks` and `Artists`.
 
 * Albums Model Structure
 ```sh
-    "artists": [{}],
+    "artists": [{
+     name: ""
+    }],
     "album_type": "",
     "image": "",
-    "tracks": [{}],
+    "tracks": [{
+     name: ""
+    }],
     "release_date": ""
 ```
 * Tracks Model Structure
 ```sh
-   "artists": [{}],
-   "albums": [{}],
+   "artists": [{
+    name: ""
+   }],
+   "albums": [{
+    name: ""
+   }],
    "duration": "",
    "image": "",
    "name": ""
@@ -32,7 +40,9 @@ I created three models for this demo `Albums`, `Tracks` and `Artists`.
 ```sh
     "name": "",
     "popularity": "",
-    "genres": [{}],
+    "genres": [{
+     name: ""
+    }],
     "image": ""
 ```
 ## Run the hosted app on Google App Engine
