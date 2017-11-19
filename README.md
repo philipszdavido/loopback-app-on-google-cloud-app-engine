@@ -19,11 +19,11 @@ I created three models for this demo `Albums`, `Tracks` and `Artists`.
 ```
 * Tracks Model Structure
 ```sh
-        "artists": [{}],
-        "albums": [{}],
-        "duration": "",
-        "image": "",
-        "name": ""
+   "artists": [{}],
+   "albums": [{}],
+   "duration": "",
+   "image": "",
+   "name": ""
 ```
 * Artists Model Structure
 ```sh
@@ -36,6 +36,13 @@ I created three models for this demo `Albums`, `Tracks` and `Artists`.
 * Note: I used mlab's Cloud MongoDB service as my datastore.
 
 * To test the APIs, use Postman.
+
+* Before you use the Postman, you need to provide the Auth0 Authorization token. Go to the `Header` tab, enter `Authorization` as the key and the following hash as the value.
+```sh
+Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFVVkdNVVZHTnpNMk9UQTJSRUl3UkRjek5EZzJNekpGTnpneVJETkVSamd3T0VVNVFVVXlRdyJ9.eyJpc3MiOiJodHRwczovL2NoaWR1bWVubmFtZGkuYXV0aDAuY29tLyIsInN1YiI6Iko1SGw3QTgyMW9GczVMTzh4RldUU0FBZHJKQllocjVZQGNsaWVudHMiLCJhdWQiOiJodHRwczovL3Nwb3RpZnktYXBwLmNvbSIsImlhdCI6MTUxMTEwOTIxMiwiZXhwIjoxNTExMTk1NjEyLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.4G7cBvu_bcnbicGZ46T63EOUouu3f252geC9OlM39ZZmIA1IcVUUWwAjzAfb5f9tDy5e0bwkUPsuv_Olkip2O2f0MRDvtmKctTsdqd79zuTygCre2mY8_BzkBl5NqRi-QI7-StZLmBBSo0P6-BDOe3ka2eECkhy735O24nzCPbgYZhsbtsfK2e73loLKuykQUsk-LmNPVvrJjiiPXKEhAfoHwuqOF1_648ilQgLZoi5F695WTUlLQi6KFlDTYqpDJRrl7mATOnRtvhUuD_BTlsDDlh5tbPHZAJgm0G_4D3jKSVzb7kfnG01uXZB8ThqbLq9DRM2hHRdzXH3gSia9JA
+```
+![Alt text](screenshots/postman_auth_header.png "Title")
+
 
 ### Albums POST Test - This creates a new album
 ![Alt text](screenshots/albums_post.png "Title")
