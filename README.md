@@ -1,7 +1,7 @@
 # Loopback app on Google App Engine
 This repo demonstrates how to run and host a loopback app on Google App Engine.
 
-* I modelled the Spotify Web API. Spotify is an online music service that gives you instant access to millions of songs – from old favorites to the latest hits.
+I modelled the Spotify Web API. Spotify is an online music service that gives you instant access to millions of songs – from old favorites to the latest hits.
 
 * [Run Locally](#run-locally)
 * [Deploying](#deploying)
@@ -78,9 +78,9 @@ EndPoint | Functionality
 -------- | -------------
 POST /albums/ | Creates a new album instance.
 GET /albums/ | Returns all albums.
-GET /albums/<id> | Returns the specified album id.
-PUT /albums/<id> | Update album attributes.
-DELETE /albums/<id> | Delete album.
+GET /albums/`<id>` | Returns the specified album id.
+PUT /albums/`<id>` | Update album attributes.
+DELETE /albums/`<id>` | Delete album.
 
 ## Tracks
 
@@ -88,9 +88,9 @@ EndPoint | Functionality
 -------- | -------------
 POST /tracks/ | Creates a new track instance.
 GET /tracks/ | Returns all tracks.
-GET /tracks/<id> | Returns the specified track id
-PUT /tracks/<id> | Update track attributes.
-DELETE /tracks/<id> | Delete track.
+GET /tracks/`<id>` | Returns the specified track id
+PUT /tracks/`<id>` | Update track attributes.
+DELETE /tracks/`<id>` | Delete track.
 
 ## Artists
 
@@ -98,9 +98,9 @@ EndPoint | Functionality
 -------- | -------------
 POST /artists/ | Creates a new artist instance.
 GET /artists/ | Returns all artists.
-GET /artists/<id> | Returns the specified artist id.
-PUT /artists/<id> | Update artist attributes.
-DELETE /artists/<id> | Delete artist.
+GET /artists/`<id>` | Returns the specified artist id.
+PUT /artists/`<id>` | Update artist attributes.
+DELETE /artists/`<id>` | Delete artist.
 
 
 ## Run Locally
