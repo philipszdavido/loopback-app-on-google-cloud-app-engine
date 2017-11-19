@@ -3,11 +3,11 @@ This repo demonstrates how to run and host a loopback app on Google App Engine.
 
 I modelled the Spotify Web API. Spotify is an online music service that gives you instant access to millions of songs – from old favorites to the latest hits.
 
-* [Run Locally](#run-locally)
-* [Deploying](#deploying)
 * [Web API Object Model](#web-api-object-model)
 * [Run the hosted app on Google App Engine](#run-the-hosted-app-on-google-app-engine)
 * [API Summary](#api-summary)
+* [Run Locally](#run-locally)
+* [Deploying](#deploying)
 
 ## Web API Object Model
 I created three models for this demo `Albums`, `Tracks` and `Artists`.
@@ -15,22 +15,22 @@ I created three models for this demo `Albums`, `Tracks` and `Artists`.
 * Albums Model Structure
 ```sh
     "artists": [{
-     name: ""
+     "name": ""
     }],
     "album_type": "",
     "image": "",
     "tracks": [{
-     name: ""
+     "name": ""
     }],
     "release_date": ""
 ```
 * Tracks Model Structure
 ```sh
    "artists": [{
-    name: ""
+    "name": ""
    }],
    "albums": [{
-    name: ""
+    "name": ""
    }],
    "duration": "",
    "image": "",
@@ -41,7 +41,7 @@ I created three models for this demo `Albums`, `Tracks` and `Artists`.
     "name": "",
     "popularity": "",
     "genres": [{
-     name: ""
+     "name": ""
     }],
     "image": ""
 ```
