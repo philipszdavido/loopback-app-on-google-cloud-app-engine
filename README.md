@@ -11,7 +11,6 @@
 #### Note
 
 All requests must be suffixed with  **loopback-app.appspot.com/api/**
-For full API documentation, visit [our docs](https://docmanager-docs.herokuapp.com/)
 
 ## Albums
 
