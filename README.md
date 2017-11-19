@@ -34,6 +34,7 @@ I created three models for this demo `Albums`, `Tracks` and `Artists`.
 ```
 ## Run the hosted app on Google App Engine
 * Note: I used mlab's Cloud MongoDB service as my datastore.
+* Note: All requests must be prefixed with  **loopback-app.appspot.com/api/**
 
 * To test the APIs, use Postman.
 
@@ -70,7 +71,7 @@ Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFVVkdNVVZHTnpNMk9UQTJSRUl3U
 
 #### Note
 
-All requests must be suffixed with  **loopback-app.appspot.com/api/**
+All requests must be prefixed with  **loopback-app.appspot.com/api/**
 
 ## Albums
 
