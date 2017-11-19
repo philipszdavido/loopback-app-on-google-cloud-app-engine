@@ -17,19 +17,31 @@ For full API documentation, visit [our docs](https://docmanager-docs.herokuapp.c
 
 EndPoint | Functionality
 -------- | -------------
-POST /users/login | Logs in a user.
+POST /albums/ | Creates a new album instance.
+GET /albums/ | Returns all albums.
+GET /albums/<id> | Returns the specified album id.
+PUT /albums/<id> | Update album attributes.
+DELETE /albums/<id> | Delete album.
 
 ## Tracks
 
 EndPoint | Functionality
 -------- | -------------
-POST /users/login | Logs in a user.
+POST /tracks/ | Creates a new track instance.
+GET /tracks/ | Returns all tracks.
+GET /tracks/<id> | Returns the specified track id
+PUT /tracks/<id> | Update track attributes.
+DELETE /tracks/<id> | Delete track.
 
 ## Artists
 
 EndPoint | Functionality
 -------- | -------------
-POST /users/login | Logs in a user.
+POST /artists/ | Creates a new artist instance.
+GET /artists/ | Returns all artists.
+GET /artists/<id> | Returns the specified artist id.
+PUT /artists/<id> | Update artist attributes.
+DELETE /artists/<id> | Delete artist.
 
 1. Open Postman.
 1. 
