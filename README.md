@@ -150,12 +150,6 @@ DELETE /artists/`<id>` | Delete artist.
 
 ## Run Locally
 
-1.  [Setup your environment for Node.js developement][nodejs_dev].
-1.  [Install the Google Cloud SDK][sdk].
-1.  Acquire local credentials for authenticating with Google Cloud Platform APIs:
-
-        gcloud auth application-default login
-
 1.  Clone this repo:
 
         git clone https://github.com/philipszdavido/loopback-app-on-google-cloud-app-engine.git
