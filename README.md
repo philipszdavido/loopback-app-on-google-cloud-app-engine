@@ -67,16 +67,16 @@ Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFVVkdNVVZHTnpNMk9UQTJSRUl3U
 
 
 ### Tracks POST Test - This creates a new track instance.
-![Alt text](screenshots/tracks_get_id.png "Title")
+![Alt text](screenshots/tracks_post.png "Title")
 ### Tracks GET Test - This retrieves all tracks from the database.
-![Alt text](screenshots/tracks_get_id.png "Title")
+![Alt text](screenshots/tracks_get.png "Title")
 ### Tracks GET `<id>` Test - This retrieves a specific track id from the database.
 ![Alt text](screenshots/tracks_get_id.png "Title")
 
 ### Artists POST Test - This creates a new artist instance.
-![Alt text](screenshots/artists_get_id.png "Title")
+![Alt text](screenshots/artists_post.png "Title")
 ### Artists GET Test - This retrieves all artists from the database.
-![Alt text](screenshots/artists_get_id.png "Title")
+![Alt text](screenshots/artists_get.png "Title")
 ### Artists GET `<id>` Test - This retrieves a specific artist id from the database 
 ![Alt text](screenshots/artists_get_id.png "Title")
 
