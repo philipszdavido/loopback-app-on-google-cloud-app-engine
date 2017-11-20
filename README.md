@@ -47,8 +47,9 @@ I created three models for this demo `Albums`, `Tracks` and `Artists`.
 ```
 ## Run the hosted app on Google App Engine
 * Note: I used mlab's Cloud MongoDB service as my datastore.
-* Note: All requests must be prefixed with  **loopback-app.appspot.com/api/**
+* Note: All requests must be prefixed with  **loopback-app.appspot.com/api/**
 
+# Albums Tests
 ### Albums POST Test - This creates a new album
 ```sh
 curl --request POST \
@@ -71,6 +72,7 @@ curl --request GET \
   --url https://loopback-app.appspot.com/api/albums/5a12c7b384a89046c0624bf4 \
   --header 'authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFVVkdNVVZHTnpNMk9UQTJSRUl3UkRjek5EZzJNekpGTnpneVJETkVSamd3T0VVNVFVVXlRdyJ9.eyJpc3MiOiJodHRwczovL2NoaWR1bWVubmFtZGkuYXV0aDAuY29tLyIsInN1YiI6Iko1SGw3QTgyMW9GczVMTzh4RldUU0FBZHJKQllocjVZQGNsaWVudHMiLCJhdWQiOiJodHRwczovL3Nwb3RpZnktYXBwLmNvbSIsImlhdCI6MTUxMTE5MTQ1NywiZXhwIjoxNTExMjc3ODU3LCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.hUzpo95mj8XaxxACg_9VbRk5rvkocYaf9rgfWbc5dgtleVVSAHhHGoHVD--GmdJnoTh9rIRZMMpKvhO7iQRGms6CDLUXMzkNfhNdKs0OJIFG1ToVb-8DaoetWIkTNDyt-Djm0N4KKzeTDzw8dXHf9czlafkAKxvLa6LLw6hcQLhGln7_AV8jzG9r_DtxnV2ittTn-cxj04JNANOWbn2VhXigC71SUnqHuUWFWdm6s2eK1fVlSWuNQzMy4DecDkG5mb5CEkQtBMGfAgr7wSJGFsurlpCw1usDG1GrwbD3TenU1xoIYQmWQsNLuuQr6n7EEZxv2pu3QvGOl2xYRw_UUA'
 ```
+# Tracks Test
 ### Tracks POST Test - This creates a new track instance.
 ```sh
 curl --request POST \
@@ -91,6 +93,7 @@ curl --request GET \
   --url https://loopback-app.appspot.com/api/tracks/5a12c7b384a89046c0624bf6 \
   --header 'authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFVVkdNVVZHTnpNMk9UQTJSRUl3UkRjek5EZzJNekpGTnpneVJETkVSamd3T0VVNVFVVXlRdyJ9.eyJpc3MiOiJodHRwczovL2NoaWR1bWVubmFtZGkuYXV0aDAuY29tLyIsInN1YiI6Iko1SGw3QTgyMW9GczVMTzh4RldUU0FBZHJKQllocjVZQGNsaWVudHMiLCJhdWQiOiJodHRwczovL3Nwb3RpZnktYXBwLmNvbSIsImlhdCI6MTUxMTE5MTQ1NywiZXhwIjoxNTExMjc3ODU3LCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.hUzpo95mj8XaxxACg_9VbRk5rvkocYaf9rgfWbc5dgtleVVSAHhHGoHVD--GmdJnoTh9rIRZMMpKvhO7iQRGms6CDLUXMzkNfhNdKs0OJIFG1ToVb-8DaoetWIkTNDyt-Djm0N4KKzeTDzw8dXHf9czlafkAKxvLa6LLw6hcQLhGln7_AV8jzG9r_DtxnV2ittTn-cxj04JNANOWbn2VhXigC71SUnqHuUWFWdm6s2eK1fVlSWuNQzMy4DecDkG5mb5CEkQtBMGfAgr7wSJGFsurlpCw1usDG1GrwbD3TenU1xoIYQmWQsNLuuQr6n7EEZxv2pu3QvGOl2xYRw_UUA'
 ```
+# Artists Test
 ### Artists POST Test - This creates a new artist instance.
 ```sh
 curl --request POST \
