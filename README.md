@@ -53,6 +53,18 @@ I created three models for this demo `Albums`, `Tracks` and `Artists`.
 ```sh
 curl --request POST \
   --url https://loopback-app.appspot.com/api/albums \
+  --data '{
+    "name": "Thriller",
+    "artists": [{
+        "name": "Michael Jackson"
+    }],
+    "album_type": "Pop",
+    "image": "michaeljackson.png",
+    "tracks": [{
+        "name": "Billie Jean"
+    }],
+    "release_date": "1986"
+  }' \
   --header 'authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFVVkdNVVZHTnpNMk9UQTJSRUl3UkRjek5EZzJNekpGTnpneVJETkVSamd3T0VVNVFVVXlRdyJ9.eyJpc3MiOiJodHRwczovL2NoaWR1bWVubmFtZGkuYXV0aDAuY29tLyIsInN1YiI6Iko1SGw3QTgyMW9GczVMTzh4RldUU0FBZHJKQllocjVZQGNsaWVudHMiLCJhdWQiOiJodHRwczovL3Nwb3RpZnktYXBwLmNvbSIsImlhdCI6MTUxMTE5MTQ1NywiZXhwIjoxNTExMjc3ODU3LCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.hUzpo95mj8XaxxACg_9VbRk5rvkocYaf9rgfWbc5dgtleVVSAHhHGoHVD--GmdJnoTh9rIRZMMpKvhO7iQRGms6CDLUXMzkNfhNdKs0OJIFG1ToVb-8DaoetWIkTNDyt-Djm0N4KKzeTDzw8dXHf9czlafkAKxvLa6LLw6hcQLhGln7_AV8jzG9r_DtxnV2ittTn-cxj04JNANOWbn2VhXigC71SUnqHuUWFWdm6s2eK1fVlSWuNQzMy4DecDkG5mb5CEkQtBMGfAgr7wSJGFsurlpCw1usDG1GrwbD3TenU1xoIYQmWQsNLuuQr6n7EEZxv2pu3QvGOl2xYRw_UUA'
 ```
 
@@ -73,6 +85,17 @@ curl --request GET \
 ```sh
 curl --request POST \
   --url https://loopback-app.appspot.com/api/tracks \
+  --data '{
+    "artists": [{
+        "name": "Michael Jackson"
+    }],
+    "albums": [{
+        "name": "Thriller"
+    }],
+    "duration": 90,
+    "image": "billiejean.png",
+    "name": "Billie Jean"
+  }' \
   --header 'authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFVVkdNVVZHTnpNMk9UQTJSRUl3UkRjek5EZzJNekpGTnpneVJETkVSamd3T0VVNVFVVXlRdyJ9.eyJpc3MiOiJodHRwczovL2NoaWR1bWVubmFtZGkuYXV0aDAuY29tLyIsInN1YiI6Iko1SGw3QTgyMW9GczVMTzh4RldUU0FBZHJKQllocjVZQGNsaWVudHMiLCJhdWQiOiJodHRwczovL3Nwb3RpZnktYXBwLmNvbSIsImlhdCI6MTUxMTE5MTQ1NywiZXhwIjoxNTExMjc3ODU3LCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.hUzpo95mj8XaxxACg_9VbRk5rvkocYaf9rgfWbc5dgtleVVSAHhHGoHVD--GmdJnoTh9rIRZMMpKvhO7iQRGms6CDLUXMzkNfhNdKs0OJIFG1ToVb-8DaoetWIkTNDyt-Djm0N4KKzeTDzw8dXHf9czlafkAKxvLa6LLw6hcQLhGln7_AV8jzG9r_DtxnV2ittTn-cxj04JNANOWbn2VhXigC71SUnqHuUWFWdm6s2eK1fVlSWuNQzMy4DecDkG5mb5CEkQtBMGfAgr7wSJGFsurlpCw1usDG1GrwbD3TenU1xoIYQmWQsNLuuQr6n7EEZxv2pu3QvGOl2xYRw_UUA'
 ```
 ### Tracks GET Test - This retrieves all tracks from the database.
@@ -91,6 +114,15 @@ curl --request GET \
 ```sh
 curl --request POST \
   --url https://loopback-app.appspot.com/api/artists \
+  --data '
+    {
+      "name": "Michael Jackson",
+      "popularity": 90,
+      "genres": [{ 
+        "name": "Pop"
+      }],
+      "image": "michaeljackson.jpg"
+    }' \
   --header 'authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFVVkdNVVZHTnpNMk9UQTJSRUl3UkRjek5EZzJNekpGTnpneVJETkVSamd3T0VVNVFVVXlRdyJ9.eyJpc3MiOiJodHRwczovL2NoaWR1bWVubmFtZGkuYXV0aDAuY29tLyIsInN1YiI6Iko1SGw3QTgyMW9GczVMTzh4RldUU0FBZHJKQllocjVZQGNsaWVudHMiLCJhdWQiOiJodHRwczovL3Nwb3RpZnktYXBwLmNvbSIsImlhdCI6MTUxMTE5MTQ1NywiZXhwIjoxNTExMjc3ODU3LCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.hUzpo95mj8XaxxACg_9VbRk5rvkocYaf9rgfWbc5dgtleVVSAHhHGoHVD--GmdJnoTh9rIRZMMpKvhO7iQRGms6CDLUXMzkNfhNdKs0OJIFG1ToVb-8DaoetWIkTNDyt-Djm0N4KKzeTDzw8dXHf9czlafkAKxvLa6LLw6hcQLhGln7_AV8jzG9r_DtxnV2ittTn-cxj04JNANOWbn2VhXigC71SUnqHuUWFWdm6s2eK1fVlSWuNQzMy4DecDkG5mb5CEkQtBMGfAgr7wSJGFsurlpCw1usDG1GrwbD3TenU1xoIYQmWQsNLuuQr6n7EEZxv2pu3QvGOl2xYRw_UUA'
 ```
 ### Artists GET Test - This retrieves all artists from the database.
