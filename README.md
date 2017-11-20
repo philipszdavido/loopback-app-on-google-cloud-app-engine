@@ -62,7 +62,7 @@ Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFVVkdNVVZHTnpNMk9UQTJSRUl3U
 ![Alt text](screenshots/albums_post.png "Title")
 ### Albums GET Test - This retrieves all albums from the database
 ![Alt text](screenshots/albums_get.png "Title")
-### Albums GET <id> Test - This retrieves a specific album id from the database 
+### Albums GET `<id>` Test - This retrieves a specific album id from the database 
 ![Alt text](screenshots/albums_get_id.png "Title")
 
 
@@ -70,14 +70,14 @@ Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFVVkdNVVZHTnpNMk9UQTJSRUl3U
 ![Alt text](screenshots/tracks_get_id.png "Title")
 ### Tracks GET Test - This retrieves all tracks from the database.
 ![Alt text](screenshots/tracks_get_id.png "Title")
-### Tracks GET <id> Test - This retrieves a specific track id from the database.
+### Tracks GET `<id>` Test - This retrieves a specific track id from the database.
 ![Alt text](screenshots/tracks_get_id.png "Title")
 
 ### Artists POST Test - This creates a new artist instance.
 ![Alt text](screenshots/artists_get_id.png "Title")
 ### Artists GET Test - This retrieves all artists from the database.
 ![Alt text](screenshots/artists_get_id.png "Title")
-### Artists GET <id> Test - This retrieves a specific artist id from the database 
+### Artists GET `<id>` Test - This retrieves a specific artist id from the database 
 ![Alt text](screenshots/artists_get_id.png "Title")
 
 ## API Summary
