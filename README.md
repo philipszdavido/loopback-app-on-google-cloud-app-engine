@@ -66,7 +66,7 @@ curl --request GET \
   --header 'authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFVVkdNVVZHTnpNMk9UQTJSRUl3UkRjek5EZzJNekpGTnpneVJETkVSamd3T0VVNVFVVXlRdyJ9.eyJpc3MiOiJodHRwczovL2NoaWR1bWVubmFtZGkuYXV0aDAuY29tLyIsInN1YiI6Iko1SGw3QTgyMW9GczVMTzh4RldUU0FBZHJKQllocjVZQGNsaWVudHMiLCJhdWQiOiJodHRwczovL3Nwb3RpZnktYXBwLmNvbSIsImlhdCI6MTUxMTE5MTQ1NywiZXhwIjoxNTExMjc3ODU3LCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.hUzpo95mj8XaxxACg_9VbRk5rvkocYaf9rgfWbc5dgtleVVSAHhHGoHVD--GmdJnoTh9rIRZMMpKvhO7iQRGms6CDLUXMzkNfhNdKs0OJIFG1ToVb-8DaoetWIkTNDyt-Djm0N4KKzeTDzw8dXHf9czlafkAKxvLa6LLw6hcQLhGln7_AV8jzG9r_DtxnV2ittTn-cxj04JNANOWbn2VhXigC71SUnqHuUWFWdm6s2eK1fVlSWuNQzMy4DecDkG5mb5CEkQtBMGfAgr7wSJGFsurlpCw1usDG1GrwbD3TenU1xoIYQmWQsNLuuQr6n7EEZxv2pu3QvGOl2xYRw_UUA'
 ```
 
-### Albums GET <id> Test - This retrieves a specific album id from the database 
+### Albums GET `<id>` Test - This retrieves a specific album id from the database 
 ```sh
 curl --request GET \
   --url https://loopback-app.appspot.com/api/albums/5a12c7b384a89046c0624bf4 \
@@ -87,7 +87,7 @@ curl --request GET \
   --url https://loopback-app.appspot.com/api/tracks \
   --header 'authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFVVkdNVVZHTnpNMk9UQTJSRUl3UkRjek5EZzJNekpGTnpneVJETkVSamd3T0VVNVFVVXlRdyJ9.eyJpc3MiOiJodHRwczovL2NoaWR1bWVubmFtZGkuYXV0aDAuY29tLyIsInN1YiI6Iko1SGw3QTgyMW9GczVMTzh4RldUU0FBZHJKQllocjVZQGNsaWVudHMiLCJhdWQiOiJodHRwczovL3Nwb3RpZnktYXBwLmNvbSIsImlhdCI6MTUxMTE5MTQ1NywiZXhwIjoxNTExMjc3ODU3LCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.hUzpo95mj8XaxxACg_9VbRk5rvkocYaf9rgfWbc5dgtleVVSAHhHGoHVD--GmdJnoTh9rIRZMMpKvhO7iQRGms6CDLUXMzkNfhNdKs0OJIFG1ToVb-8DaoetWIkTNDyt-Djm0N4KKzeTDzw8dXHf9czlafkAKxvLa6LLw6hcQLhGln7_AV8jzG9r_DtxnV2ittTn-cxj04JNANOWbn2VhXigC71SUnqHuUWFWdm6s2eK1fVlSWuNQzMy4DecDkG5mb5CEkQtBMGfAgr7wSJGFsurlpCw1usDG1GrwbD3TenU1xoIYQmWQsNLuuQr6n7EEZxv2pu3QvGOl2xYRw_UUA'
 ```
-### Tracks GET <id> Test - This retrieves a specific track id from the database.
+### Tracks GET `<id>` Test - This retrieves a specific track id from the database.
 ```sh
 curl --request GET \
   --url https://loopback-app.appspot.com/api/tracks/5a12c7b384a89046c0624bf6 \
@@ -108,7 +108,7 @@ curl --request GET \
   --url https://loopback-app.appspot.com/api/artists \
   --header 'authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFVVkdNVVZHTnpNMk9UQTJSRUl3UkRjek5EZzJNekpGTnpneVJETkVSamd3T0VVNVFVVXlRdyJ9.eyJpc3MiOiJodHRwczovL2NoaWR1bWVubmFtZGkuYXV0aDAuY29tLyIsInN1YiI6Iko1SGw3QTgyMW9GczVMTzh4RldUU0FBZHJKQllocjVZQGNsaWVudHMiLCJhdWQiOiJodHRwczovL3Nwb3RpZnktYXBwLmNvbSIsImlhdCI6MTUxMTE5MTQ1NywiZXhwIjoxNTExMjc3ODU3LCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.hUzpo95mj8XaxxACg_9VbRk5rvkocYaf9rgfWbc5dgtleVVSAHhHGoHVD--GmdJnoTh9rIRZMMpKvhO7iQRGms6CDLUXMzkNfhNdKs0OJIFG1ToVb-8DaoetWIkTNDyt-Djm0N4KKzeTDzw8dXHf9czlafkAKxvLa6LLw6hcQLhGln7_AV8jzG9r_DtxnV2ittTn-cxj04JNANOWbn2VhXigC71SUnqHuUWFWdm6s2eK1fVlSWuNQzMy4DecDkG5mb5CEkQtBMGfAgr7wSJGFsurlpCw1usDG1GrwbD3TenU1xoIYQmWQsNLuuQr6n7EEZxv2pu3QvGOl2xYRw_UUA'
 ```
-### Artists GET <id> Test - This retrieves a specific artist id from the database 
+### Artists GET `<id>` Test - This retrieves a specific artist id from the database 
 ```sh
 curl --request GET \
   --url https://loopback-app.appspot.com/api/artists/5a12c7b384a89046c0624bf4 \
