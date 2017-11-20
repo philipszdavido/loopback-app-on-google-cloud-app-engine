@@ -3,6 +3,9 @@ This repo demonstrates how to run and host a loopback app on Google App Engine.
 
 I modelled the Spotify Web API. Spotify is an online music service that gives you instant access to millions of songs – from old favorites to the latest hits.
 
+* [Web API Object Model](#web-api-object-model)
+* [Run the hosted app on Google App Engine](#run-the-hosted-app-on-google-app-engine)
+* [API Summary](#api-summary)
 * [Run Locally](#run-locally)
 * [Deploying](#deploying)
 
@@ -11,16 +14,24 @@ I created three models for this demo `Albums`, `Tracks` and `Artists`.
 
 * Albums Model Structure
 ```sh
-    "artists": [{}],
+    "artists": [{
+     "name": ""
+    }],
     "album_type": "",
     "image": "",
-    "tracks": [{}],
+    "tracks": [{
+     "name": ""
+    }],
     "release_date": ""
 ```
 * Tracks Model Structure
 ```sh
-   "artists": [{}],
-   "albums": [{}],
+   "artists": [{
+    "name": ""
+   }],
+   "albums": [{
+    "name": ""
+   }],
    "duration": "",
    "image": "",
    "name": ""
@@ -29,7 +40,9 @@ I created three models for this demo `Albums`, `Tracks` and `Artists`.
 ```sh
     "name": "",
     "popularity": "",
-    "genres": [{}],
+    "genres": [{
+     "name": ""
+    }],
     "image": ""
 ```
 ## Run the hosted app on Google App Engine
@@ -42,9 +55,15 @@ curl --request POST \
   --header 'authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFVVkdNVVZHTnpNMk9UQTJSRUl3UkRjek5EZzJNekpGTnpneVJETkVSamd3T0VVNVFVVXlRdyJ9.eyJpc3MiOiJodHRwczovL2NoaWR1bWVubmFtZGkuYXV0aDAuY29tLyIsInN1YiI6Iko1SGw3QTgyMW9GczVMTzh4RldUU0FBZHJKQllocjVZQGNsaWVudHMiLCJhdWQiOiJodHRwczovL3Nwb3RpZnktYXBwLmNvbSIsImlhdCI6MTUxMTE5MTQ1NywiZXhwIjoxNTExMjc3ODU3LCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.hUzpo95mj8XaxxACg_9VbRk5rvkocYaf9rgfWbc5dgtleVVSAHhHGoHVD--GmdJnoTh9rIRZMMpKvhO7iQRGms6CDLUXMzkNfhNdKs0OJIFG1ToVb-8DaoetWIkTNDyt-Djm0N4KKzeTDzw8dXHf9czlafkAKxvLa6LLw6hcQLhGln7_AV8jzG9r_DtxnV2ittTn-cxj04JNANOWbn2VhXigC71SUnqHuUWFWdm6s2eK1fVlSWuNQzMy4DecDkG5mb5CEkQtBMGfAgr7wSJGFsurlpCw1usDG1GrwbD3TenU1xoIYQmWQsNLuuQr6n7EEZxv2pu3QvGOl2xYRw_UUA'
 
 ### Albums GET Test - This retrieves all albums from the database
+<<<<<<< HEAD
 curl --request GET \
   --url https://loopback-app.appspot.com/api/albums \
   --header 'authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFVVkdNVVZHTnpNMk9UQTJSRUl3UkRjek5EZzJNekpGTnpneVJETkVSamd3T0VVNVFVVXlRdyJ9.eyJpc3MiOiJodHRwczovL2NoaWR1bWVubmFtZGkuYXV0aDAuY29tLyIsInN1YiI6Iko1SGw3QTgyMW9GczVMTzh4RldUU0FBZHJKQllocjVZQGNsaWVudHMiLCJhdWQiOiJodHRwczovL3Nwb3RpZnktYXBwLmNvbSIsImlhdCI6MTUxMTE5MTQ1NywiZXhwIjoxNTExMjc3ODU3LCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.hUzpo95mj8XaxxACg_9VbRk5rvkocYaf9rgfWbc5dgtleVVSAHhHGoHVD--GmdJnoTh9rIRZMMpKvhO7iQRGms6CDLUXMzkNfhNdKs0OJIFG1ToVb-8DaoetWIkTNDyt-Djm0N4KKzeTDzw8dXHf9czlafkAKxvLa6LLw6hcQLhGln7_AV8jzG9r_DtxnV2ittTn-cxj04JNANOWbn2VhXigC71SUnqHuUWFWdm6s2eK1fVlSWuNQzMy4DecDkG5mb5CEkQtBMGfAgr7wSJGFsurlpCw1usDG1GrwbD3TenU1xoIYQmWQsNLuuQr6n7EEZxv2pu3QvGOl2xYRw_UUA'
+=======
+![Alt text](screenshots/albums_get.png "Title")
+### Albums GET `<id>` Test - This retrieves a specific album id from the database 
+![Alt text](screenshots/albums_get_id.png "Title")
+>>>>>>> 2b6bf3233e6145884d92bdb03d086c2ecf6f7027
 
 ### Albums GET <id> Test - This retrieves a specific album id from the database 
 curl --request GET \
@@ -52,6 +71,7 @@ curl --request GET \
   --header 'authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFVVkdNVVZHTnpNMk9UQTJSRUl3UkRjek5EZzJNekpGTnpneVJETkVSamd3T0VVNVFVVXlRdyJ9.eyJpc3MiOiJodHRwczovL2NoaWR1bWVubmFtZGkuYXV0aDAuY29tLyIsInN1YiI6Iko1SGw3QTgyMW9GczVMTzh4RldUU0FBZHJKQllocjVZQGNsaWVudHMiLCJhdWQiOiJodHRwczovL3Nwb3RpZnktYXBwLmNvbSIsImlhdCI6MTUxMTE5MTQ1NywiZXhwIjoxNTExMjc3ODU3LCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.hUzpo95mj8XaxxACg_9VbRk5rvkocYaf9rgfWbc5dgtleVVSAHhHGoHVD--GmdJnoTh9rIRZMMpKvhO7iQRGms6CDLUXMzkNfhNdKs0OJIFG1ToVb-8DaoetWIkTNDyt-Djm0N4KKzeTDzw8dXHf9czlafkAKxvLa6LLw6hcQLhGln7_AV8jzG9r_DtxnV2ittTn-cxj04JNANOWbn2VhXigC71SUnqHuUWFWdm6s2eK1fVlSWuNQzMy4DecDkG5mb5CEkQtBMGfAgr7wSJGFsurlpCw1usDG1GrwbD3TenU1xoIYQmWQsNLuuQr6n7EEZxv2pu3QvGOl2xYRw_UUA'
 
 ### Tracks POST Test - This creates a new track instance.
+<<<<<<< HEAD
 curl --request POST \
   --url https://loopback-app.appspot.com/api/tracks \
   --header 'authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFVVkdNVVZHTnpNMk9UQTJSRUl3UkRjek5EZzJNekpGTnpneVJETkVSamd3T0VVNVFVVXlRdyJ9.eyJpc3MiOiJodHRwczovL2NoaWR1bWVubmFtZGkuYXV0aDAuY29tLyIsInN1YiI6Iko1SGw3QTgyMW9GczVMTzh4RldUU0FBZHJKQllocjVZQGNsaWVudHMiLCJhdWQiOiJodHRwczovL3Nwb3RpZnktYXBwLmNvbSIsImlhdCI6MTUxMTE5MTQ1NywiZXhwIjoxNTExMjc3ODU3LCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.hUzpo95mj8XaxxACg_9VbRk5rvkocYaf9rgfWbc5dgtleVVSAHhHGoHVD--GmdJnoTh9rIRZMMpKvhO7iQRGms6CDLUXMzkNfhNdKs0OJIFG1ToVb-8DaoetWIkTNDyt-Djm0N4KKzeTDzw8dXHf9czlafkAKxvLa6LLw6hcQLhGln7_AV8jzG9r_DtxnV2ittTn-cxj04JNANOWbn2VhXigC71SUnqHuUWFWdm6s2eK1fVlSWuNQzMy4DecDkG5mb5CEkQtBMGfAgr7wSJGFsurlpCw1usDG1GrwbD3TenU1xoIYQmWQsNLuuQr6n7EEZxv2pu3QvGOl2xYRw_UUA'
