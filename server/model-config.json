@@ -39,15 +39,15 @@
         "dataSource": null
     },
     "Artists": {
-        "dataSource": "mongodb",
+        "dataSource": "firestore",
         "public": true
     },
     "Tracks": {
-        "dataSource": "mongodb",
+        "dataSource": "firestore",
         "public": true
     },
     "Albums": {
-        "dataSource": "mongodb",
+        "dataSource": "firestore",
         "public": true
     }
 }

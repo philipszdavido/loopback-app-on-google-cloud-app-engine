@@ -46,7 +46,7 @@ I created three models for this demo `Albums`, `Tracks` and `Artists`.
     "image": ""
 ```
 ## Run the hosted app on Google App Engine
-* Note: I used mlab's Cloud MongoDB service as my datastore.
+* Note: I used Google Cloud Firestore service as my datastore.
 * Note: All requests must be prefixed with  **loopback-app.appspot.com/api/**
 
 ### Albums POST Test - This creates a new album

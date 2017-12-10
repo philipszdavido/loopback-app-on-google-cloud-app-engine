@@ -1,5 +1,5 @@
 module.exports = function(app) {
-    app.dataSources.mongodb.automigrate('Albums', function(err) {
+    app.dataSources.firestore.automigrate('Albums', function(err) {
         if (err) throw err;
 
         app.models.Albums.create([{
@@ -31,7 +31,7 @@ module.exports = function(app) {
         });
     });
 
-    app.dataSources.mongodb.automigrate('Tracks', function(err) {
+    app.dataSources.firestore.automigrate('Tracks', function(err) {
         if (err) throw err;
 
         app.models.Tracks.create([{
@@ -53,7 +53,7 @@ module.exports = function(app) {
         });
     });
 
-    app.dataSources.mongodb.automigrate('Artists', function(err) {
+    app.dataSources.firestore.automigrate('Artists', function(err) {
         if (err) throw err;
 
         app.models.Artists.create([{

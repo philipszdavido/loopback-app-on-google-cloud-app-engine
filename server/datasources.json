@@ -3,8 +3,12 @@
         "name": "db",
         "connector": "memory"
     },
-    "mongodb": {
-        "url": "mongodb://alc:alc@ds237855.mlab.com:37855/alc",
-        "connector": "mongodb"
+    "firestore": {
+        "name": "firestore",
+        "connector": "loopback-connector-firestore",
+        "type": "service_account",
+        "projectId": "tv-series-tracker",
+        "privateKey": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDCYrE6rnrmv/aX\nB4jryku9cLkhMNbCNoRHELAiq64seVFRkvx9Bm1A5Z/YG3T4XZ5gIDZ9LneVZ56L\nwcIXMIiVC4prae5155xAXL048mOWi1g0wOTMX1oa8e3N+ydSmjUNZRg9hHUM9d0P\nxobEweuOElfDJ+F4u6NwV//px8zCTcTbhFpKtWB64xSVjeDyzwWmtlZZBg5JrGXl\nczI7umaBetMI7VqF4zWCEpSvCLNOFEUhUWLUBBZpLKF4b52PZF6hU4iWioJmEsEk\nfwltbTks2F7E53Dt30E4Lm5mY8VEPehlR86EuJXMqgH7D9Pu6kge48qeROvcRu/A\niKv/4RVRAgMBAAECggEAGwQldq7uVOjEKGx7Kq5EhZFHoaXMi1SRYOEgYckznWnF\nFA3WOrgschMX+qyiPqygSOLhP9e39hNfNTRaOefca76dX91qr4dfr5BUGjiR/8fh\nG//dLMxp1Qnfz7uC1ReqnPB6hH5G2GTJcxpX+7up9eZ1vSFrVGDbz87jOgYzXqO7\nQL6udr1SZMpBv/Sp9U1Elfxg84Bn/W2SLX8+3z030JJOMurPwi6t3t5+uwwJ7RxY\nPnXtup5rgy/ArCvobML7nJJb7iswmAk8ABgavhWVhjE4ceOCQWObRiJ8FPNTqj0U\nVISvi+uuRbY8RxNsGt9NpYLgL6dN8kbaDSiwk6aNeQKBgQDturyuxlImr+wPghow\nIX6QDDbY7Mi6vB4NcCEbMnAs+odkpTCCeWUyilIQJ6YiwPKsf8DciDD2wnVfh+Zk\nR1wPENGNKmifS7z9Tt5SeZcXFCIDfHmSWh6rrZJjTLMcLF5kcqRW0v6+udEDaZP3\nqws68JKl5tSoKd67IAaWk31pHQKBgQDRUyzYJqzqOQIbOzWxLxisQwUwq3P99kME\n/yq0IhAAnoOa/Kj35IOE0HprYx8HEYd4FxyHAvTqvUqQJUYiCIQwmsf6phGXsGyA\nW5OCdb7YOipJ04ZxmbqF1nH9xBxtokzqIxeZH3U6mT+bueTi0csNxr9FDR5nblAU\n7G2+HidaxQKBgH7apXJxu0aPm1yPJSBHzzxYeC/68gXK+hJboh7cJEWsDfFjwGXv\nF1QHwVCDh8CFyzjHFwfW2KHkFDO81fDury4O4HL+jUNra9aTbkj+PuR+xsOreUfi\nNPmRLks0k2LWPixFjHIUNwFZMDIs9Vs0d1KlKuvCJ/nwFb0ukrVo0IP1AoGATurQ\nyV0ra9K6XJHiGD7tSmSqHENHo8OoWMXqz6bX6aPZciE3gt4AR55hyQLBu+R78mak\nNrKCq81ZwyaKXmJflAOGyZS6pTm6bloYLuM9ZD/pmZPJ6CJRFAxZRZceMKcz4EIC\nr5QQmlsUhB19kZYOu87mZZ4gjFYmkvzgEwFDTRECgYEAy7PmWS7IK8TDXG9LazaU\ntmqI46V6BUpG1SfF5wbSW4Qq6Z5c7WBFCN9trVRy31gA7lA8PD2NZawnLVm+UcwL\n4jC3lGn1zhZUHLd8sVB36G1b8RopRRbq7TwkRQIwWlCiGikKzB+y6B0xKgB5aTbJ\nc23LgKhmJ4rpzytS/pyAY2g=\n-----END PRIVATE KEY-----\n",
+        "clientEmail": "tv-series-tracker@appspot.gserviceaccount.com"
     }
 }
